@@ -68,7 +68,7 @@ async def kick(*name):
 		
 
 # start	
-client.run('MzkyMjA4MzA3NDYyNjAyNzUy.DRl0lA.G9_2TBS9z6z46TevdyNsiWJ--E4')
+client.run('ENTER TOKEN HERE')
 
 #TODO short help for in channel message, long help via PM
 #TODO restrict to certain channels with helpers and permissions
