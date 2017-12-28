@@ -2,7 +2,7 @@ from vote import *
 from ban import *
 # tally and anti-abuse for voting
 votesKick = {}
-kickBound = 1;
+kickBound = 5;
 async def voteKick(client,message):
 	author = message.author;
 	person = message.content[6:];

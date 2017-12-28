@@ -1,7 +1,7 @@
 from vote import *
 # tally and anti-abuse for voting
 votesBan = {}
-banBound = 1;
+banBound = 5;
 async def voteBan(client,message):
 	author = message.author;
 	person = message.content[5:];

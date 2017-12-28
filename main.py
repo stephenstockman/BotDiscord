@@ -32,27 +32,22 @@ async def on_message(message):
 		await unban(client,message);
 
 	if message.content.startswith('!help'):
-		await client.send_message(message.channel,'Current available commands: !kick <name>, !aban <name>,...');
+		await client.send_message(message.channel,'Current available commands: !kick <name>, !ban <name>,!unban <name>...');
 		await client.send_message(message.channel,'Use !help for this message and !pmhelp for a private more thorough message');
 
 	if message.content.startswith('!pmhelp'):
 		await client.send_message(message.author,'--------');
 		await client.send_message(message.author,'1.) !kick <person>:');
-		await client.send_message(message.author,'Can be used to vote to kick someone. One can only vote for the someone once, repeatedly voting to kickban someone results in an Akari no bully picture.');
+		await client.send_message(message.author,'Can be used to vote to kick someone. One can only vote for the someone once, repeatedly voting to kickban someone results in an Akari no bully picture. User kikced is sent an invite so this is really just for memes rather than actual use.');
  		
 		await client.send_message(message.author,'Examples !kick Blake, !kick jake#0007, !kick vince');
 		await client.send_message(message.author,'--------');
 
-		await client.send_message(message.author,'2.) !unkick <person>:');
-		await client.send_message(message.author,'Invites the person back to the server by sendng a pm with the link');
-		await client.send_message(message.author,'Examples !invite blake');
-
-		await client.send_message(message.author,'--------');
-		await client.send_message(message.author,'3.) !aban <person>:');
-		await client.send_message(message.author,'Can be used to vote to ban someone. One can only vote for the someone once, repeatedly voting to kick/ban someone results in an Akari no bully picture.');
+		await client.send_message(message.author,'3.) !ban <person>:');
+		await client.send_message(message.author,'Can be used to vote to ban someone. One can only vote for the someone once, repeatedly voting to kick/ban someone results in an Akari no bully picture. Once ban passes the user is banned and sent an invite, which cant be used until after 1 day or until they are manually unbanned');
  		
 		await client.send_message(message.author,'--------');
-		await client.send_message(message.author,'4.) !uban <person>:');
+		await client.send_message(message.author,'4.) !unban <person>:');
 		await client.send_message(message.author,'Unbans the person no voting needed');
 
 		await client.send_message(message.author,'Examples !uban Blake, !uban jake#0007, !uban vince');
@@ -79,7 +74,7 @@ client.run('MzkyMjA4MzA3NDYyNjAyNzUy.DRtwbw.palDZ3PBRcaMOzjlqzu2vYZMKEQ')
 #TODO implement database or just use pickle
 #TODO updates on voting and timer based stuff
 #TODO customize variables and options in KickBot
-#TODO auto add back/unban after a period of time
+#TODO auto unban after a period of time specified as seperate argument
 #TODO get token from another file
 #TODO move help stuff to seperate file
 
