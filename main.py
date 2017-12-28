@@ -67,7 +67,7 @@ async def on_message(message):
 	
 	
 # start	
-client.run('MzkyMjA4MzA3NDYyNjAyNzUy.DRtwbw.palDZ3PBRcaMOzjlqzu2vYZMKEQ')
+client.run('')
 
 #TODO restrict to certain channels with helpers and permissions
 #TODO umich API for class notification and dining
